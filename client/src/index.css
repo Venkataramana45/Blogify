@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+
+html{
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+
+body, div, span, section, article, header, footer, nav, aside, main, ul, li, ol, a, button {
+  user-select: none;
+  cursor: default;
+}
+
+
+input, textarea, [contenteditable="true"], .editor {
+  user-select: text;
+  cursor: text;
+}
+
+input[type="file"], button, .pointer {
+  cursor: pointer;
+}
+
+
+body {
+  background-color: #141414;
+  color: #fff;
+}
+
+@theme {
+  --color-black-*: initial;
+  --color-black: #141414;
+  --color-amber-*: initial;
+  --color-amber: #ffc300;
+  --color-gray-*: initial;
+  --color-gray: #232323;
+}
+
+input:focus {
+  border-color: #ffc300;
+}
+
+code {
+  text-align: justify;
+}
+
+.para {
+  font-family: monospace;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.dropdown{
+  position: absolute;
+  top: 5rem;
+  right: 6.5rem;
+  background-color: white;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  /* padding-inline: 30px; */
+}
+
+.dropdown::before{
+  content: '';
+  position: absolute;
+  top: -0.6rem;
+  right: 1.3rem;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+b{
+  font-size: 1.25rem;
+}
+
+li{
+  padding-inline: 30px;
+}
