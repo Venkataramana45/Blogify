@@ -76,7 +76,7 @@ export const Signup = () => {
   };
 
   return (
-    <div className="flex min-h-screen max-w-screen items-center justify-center m-auto">
+    <div className="flex min-h-screen max-w-screen items-center justify-center m-auto py-30">
       <div className="bg-gray px-7 py-5 rounded-lg space-y-2">
         <h1 className="text-3xl text-amber font-semibold">Create Account</h1>
         <p className="text-md text-white/50">
@@ -93,7 +93,7 @@ export const Signup = () => {
             <input
               type="text"
               placeholder="Enter your Name"
-              className="w-md h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
+              className="md:w-md w-3xs h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
               required
               onChange={onNameChange}
             />
@@ -105,7 +105,7 @@ export const Signup = () => {
             <input
               type="email"
               placeholder="Enter your Email"
-              className="w-md h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
+              className="md:w-md w-3xs h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
               required
               onChange={onEmailChange}
             />
@@ -117,7 +117,7 @@ export const Signup = () => {
             <input
               type="password"
               placeholder="Enter your Password"
-              className="w-md h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
+              className="md:w-md w-3xs h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
               required
               onChange={onPassChange}
             />
@@ -129,7 +129,7 @@ export const Signup = () => {
             <input
               type="password"
               placeholder="Retype your Password"
-              className="w-md h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
+              className="md:w-md w-3xs h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
               required
               onChange={onConfirmPassChange}
             />

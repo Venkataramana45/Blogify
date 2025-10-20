@@ -25,8 +25,8 @@ export const MyBlogs = () => {
   };
 
   return (
-    <div className="flex min-h-screen max-w-screen mx-30 items-start pt-35 flex-col gap-10 pb-20 overflow-x-hidden">
-      <div className="text-4xl font-bold text-white/90 pb-4">My Blogs</div>
+    <div className="flex min-h-screen max-w-screen lg:mx-30 mx-10 items-start pt-35 flex-col gap-10 pb-20 overflow-x-hidden">
+      <div className="lg:text-4xl text-3xl font-bold text-white/90 pb-4">My Blogs</div>
       {BlogData.length === 0 ? (
         <div className="text-2xl text-white/60 m-auto">No Blogs Found</div>
       ) : (
@@ -37,12 +37,12 @@ export const MyBlogs = () => {
               className="bg-gray px-7 py-5 rounded-lg w-full pointer"
               key={post._id}
             >
-              <div className="space-y-3 pointer">
-                <h1 className="text-3xl text-white/90 font-bold">
+              <div className="lg:space-y-3 space-y-0.5 pointer">
+                <h1 className="lg:text-3xl text-xl text-justify text-white/90 font-bold">
                   {post.title}
                 </h1>
                 <div className="flex gap-10 pt-5 items-center">
-                  <div className="aspect-square bg-black rounded-sm w-45 h-45">
+                  <div className="aspect-square bg-black rounded-sm w-45 h-45 md:block hidden">
                     <img
                       src={
                         post.coverImageURL

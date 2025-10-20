@@ -80,7 +80,7 @@ export const CreateBlog = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col min-h-screen max-w-screen mx-30 pt-35 gap-10 pb-20 items-center"
+      className="flex flex-col min-h-screen max-w-screen lg:mx-30 mx-10 pt-35 lg:gap-10 gap-5 pb-20 items-center"
     >
       <label className="w-full h-64 flex flex-col items-center justify-center border-2 border-white/40 border-dashed rounded-lg pointer">
         {imagePreview ? (
@@ -106,7 +106,7 @@ export const CreateBlog = () => {
           required={true}
         />
       </label>
-      <div className="flex flex-col gap-3 w-full">
+      <div className="flex flex-col lg:gap-3 gap-1 w-full">
         <label className="text-white/70">Title *</label>
         <input
           type="text"
@@ -116,7 +116,7 @@ export const CreateBlog = () => {
           onChange={ontitleChange}
         />
       </div>
-      <div className="flex flex-col gap-3 w-full">
+      <div className="flex flex-col lg:gap-3 gap-1 w-full">
         <label className="text-white/70">Content *</label>
         <Editor
           value={html}

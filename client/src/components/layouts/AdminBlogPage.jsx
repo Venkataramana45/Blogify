@@ -9,11 +9,11 @@ export const AdminBlogPage = () => {
       <img
         src={`http://localhost:8001/images/thumbnail.png`}
         alt="thumbnail"
-        className="w-full h-full object-cover pt-21 justify-self-center aspect-5/2"
+        className="w-full h-full object-cover pt-21 justify-self-center lg:aspect-5/2 aspect-5/4"
       />
-      <div className="flex flex-col min-h-screen max-w-screen mx-30 items-start pt-15 pb-20 space-y-5">
-        <h1 className="text-4xl text-white/90 font-bold">Introducing Blogify</h1>
-        <div className="font-semibold text-white/50 text-xl"> - Admin</div>
+      <div className="flex flex-col min-h-screen max-w-screen lg:mx-30 mx-10 items-start pt-15 pb-20 space-y-5">
+        <h1 className="lg:text-3xl text-2xl text-justify text-white/90 font-bold">Introducing Blogify</h1>
+        <div className="font-semibold text-white/50 lg:text-xl text-md"> - Admin</div>
         <div className="para text-white/85 pt-10">
           <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         </div>

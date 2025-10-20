@@ -19,9 +19,9 @@ export const DropDownMenu = (props) => {
   };
 
   return (
-    <div className="flex flex-col dropdown">
+    <div className="flex flex-col dropdown absolute top-20 lg:right-26 right-6 bg-white shadow-lg rounded-md p-2.5 z-1">
       <ul className="flex flex-col gap-2 justify-center items-center">
-        <li className="font-semibold text-lg">{props.name}</li>
+        <li className="font-semibold text-lg text-gray">{props.name}</li>
         <li className="text-sm text-gray/80">{props.email}</li>
         <hr className="border-1 border-gray/40 w-full -px-30" />
         <Link to= "/myblogs"><li className="pointer text-black/70 hover:underline hover:text-black">My Blogs</li></Link>

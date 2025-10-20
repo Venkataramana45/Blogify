@@ -36,7 +36,7 @@ export const Nav = () => {
   }, []);
 
   return (
-    <div className="w-screen px-30 py-6 fixed justify-between flex bg-black">
+    <div className="w-screen lg:px-30 px-10 py-6 fixed justify-between flex bg-black">
       <Link to="/"><img src={logo} alt="Blogify" className="w-15 h-auto" /></Link>
         {isLogin && (
           <div className="flex gap-5">

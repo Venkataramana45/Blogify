@@ -10,12 +10,12 @@ export const AdminBlog = () => {
       to = "/blog/Introducing-Blogify"
       className="bg-gray px-7 py-5 rounded-lg w-full pointer"
     >
-      <div className="space-y-3 pointer">
-        <h1 className="text-3xl text-white/90 font-bold">
+      <div className="lg:space-y-3 space-y-1 pointer">
+        <h1 className="lg:text-3xl text-xl text-justify text-white/90 font-bold">
           Introducing Blogify
         </h1>
         <div className="flex gap-10 pt-5 items-center">
-          <div className="aspect-square bg-black rounded-sm w-45 h-45">
+          <div className="aspect-square bg-black rounded-sm w-45 h-45 md:block hidden">
             <img
               src={`http://localhost:8001/images/thumbnail.png`}
               alt="Thumbnail"

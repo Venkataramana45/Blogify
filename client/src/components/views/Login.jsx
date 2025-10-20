@@ -77,7 +77,7 @@ export const Login = () => {
             <input
               type="email"
               placeholder="Enter your Email"
-              className="w-md h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
+              className="md:w-md w-3xs h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
               required
               onChange={onEmailChange}
             />
@@ -89,7 +89,7 @@ export const Login = () => {
             <input
               type="password"
               placeholder="Enter your Password"
-              className="w-md h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
+              className="md:w-md w-3xs h-10 p-3 border-1 rounded-md border-white/50 bg-black/30"
               required
               onChange={onPassChange}
             />

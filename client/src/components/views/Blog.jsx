@@ -72,12 +72,12 @@ export const Blog = () => {
             : thumbnail
         }
         alt="thumbnail"
-        className="w-full h-full object-cover pt-21 justify-self-center aspect-5/2"
+        className="w-full h-full object-cover pt-21 justify-self-center lg:aspect-5/2 aspect-5/4"
       />
-      <div className="flex flex-col min-h-screen max-w-screen mx-30 items-start pt-15 pb-15 space-y-3">
-        <h1 className="text-4xl text-white/90 font-bold">{blogData.title}</h1>
-        <div className="font-semibold text-white/60 text-xl"> - {userName}</div>
-        <div className=" text-white/50 text-md">
+      <div className="flex flex-col min-h-screen max-w-screen lg:mx-30 mx-10 items-start pt-15 pb-15 space-y-3">
+        <h1 className="lg:text-3xl text-2xl text-justify text-white/90 font-bold">{blogData.title}</h1>
+        <div className="font-semibold text-white/60 lg:text-xl text-md"> - {userName}</div>
+        <div className=" text-white/50 lg:text-md text-sm">
           {" "}
           Last updated on {new Date(blogData.updatedAt).toLocaleDateString()}
         </div>
@@ -86,10 +86,10 @@ export const Blog = () => {
         </div>
       </div>
 
-      <div className="mx-30 max-w-screen pb-20 space-y-6">
-        <h2 className="text-2xl font-semibold">Comments - {comments.length}</h2>
+      <div className="lg:mx-30 mx-10 max-w-screen pb-20 lg:space-y-6 space-y-3">
+        <h2 className="lg:text-2xl text-xl font-semibold">Comments - {comments.length}</h2>
         {isLoginedIn && (
-          <form className="max-w-screen space-y-3" onSubmit={handleClick}>
+          <form className="max-w-screen lg:space-y-3 space-y-2 pb-10" onSubmit={handleClick}>
             <TextareaAutosize
               className="border-2 w-full px-3 py-2 rounded-lg border-white/60 resize-none"
               minRows={3}
@@ -103,10 +103,10 @@ export const Blog = () => {
         )}
 
         {comments.map((comment) => (
-          <div key={comment._id} className="space-y-2 py-3">
+          <div key={comment._id} className="space-y-2 lg:py-3 py-1">
             <div className="flex gap-4">
               <img src={user} alt="user" className="w-7 h-7 rounded-full" />
-              <p className="text-white/60 font-semibold text-lg">
+              <p className="text-white/60 font-semibold text-lg text-wrap">
                 {comment.createdBy.fullName}
               </p>
             </div>

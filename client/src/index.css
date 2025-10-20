@@ -51,16 +51,7 @@ code {
   text-align: justify;
 }
 
-.dropdown{
-  position: absolute;
-  top: 5rem;
-  right: 6.5rem;
-  background-color: white;
-  color: #000;
-  border-radius: 10px;
-  padding: 10px;
-  /* padding-inline: 30px; */
-}
+
 
 .dropdown::before{
   content: '';
